@@ -1,0 +1,12 @@
+name: cicd for java maven
+on:
+ push:
+  branches: [main]
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+  - name: build java code with maven
+    run: mvn package 
+  
+   
